@@ -1,0 +1,154 @@
+:root{
+    --backgroundColor: #EBEBEB;
+    --twoBackgroundColor: white;
+    --textColor: black;
+    --shadow: 0 3px 4px gray;
+}
+
+.dark{
+    --backgroundColor: black;
+    --twoBackgroundColor: rgb(15, 15, 15);
+    --textColor: white;
+    --shadow: 0 3px 4px rgb(26, 26, 26);
+}
+
+body{
+    max-height: 100vh;
+    margin: 0;
+    display: flex;
+    background-color: var(--backgroundColor);
+}
+
+.coverIMG{
+    width: 50em;
+    height: 100vh;
+    position: absolute;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background: rgba(0, 0, 0, 0.65);
+    position: relative;
+    text-align: center;
+    margin-top: 15em;
+    width: 48em;
+    padding: 1rem;
+}
+
+.img_text{
+    color: white;
+    font-size: 2em;
+}
+
+.cite{
+    position: relative;
+    color: white;
+    text-align: center;
+    opacity: 70%;
+    transition: .5s ease;
+    text-decoration: none;
+}
+/* section one */
+.one{
+    margin-top: 10em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--textColor);
+    font-size: 1.5em;
+}
+
+/* section two */
+.two{
+    background-color: var(--twoBackgroundColor);
+    box-shadow: var(--shadow);
+    padding: 3em;
+}
+
+.header_S2{
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    font-weight: 500;
+    color: var(--textColor);
+}
+
+input{
+    height: 1.25em;
+    width: 20em;
+    font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="email"]:focus,
+input[type="tel"]:focus, input[type="password"]:focus{
+    outline: 0;
+}
+
+input:focus{
+    box-shadow: 0 1px 2px #df9600;
+    border-radius: 4px;
+}
+
+
+.two > *{
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 10em;
+}
+
+.two > * > *{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    color: var(--textColor);
+    margin-left: 2.5rem;
+}
+
+/* section three */
+
+.three{
+    margin: 2rem;
+    padding: 20px;
+}
+
+.create_account {
+    background-color: #ff005b;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1.2em;
+    transition: .5s ease;
+    color: white;
+    box-shadow: 0 3px 4px black;
+}
+
+.create_account:hover{
+    transition: .6s ease;
+    background-color: #4f0089;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 6px black;
+}
+
+.create_account:active{
+    transition: .1s ease;
+    background-color: #4f0089;
+    transform: translateY(0px);
+    box-shadow: 0 2px 3px black;
+}
+
+.log_in{
+    margin-top: 1.5em;
+    font-size: 1.1em;
+    color: var(--textColor);
+}
+
+a{
+    text-decoration: none;
+    color: #ff005b;
+    transition: .6s ease;
+}
+
+a:hover{
+    color: #4f0089;
+    transition: .6s ease;
+}

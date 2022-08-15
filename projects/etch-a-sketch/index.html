@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    
+    <title>Etch-A-Sketch</title>
+
+    <body>
+        <h1><a href="index.html">Etch-A-Sketch</a></h1>
+        <main class="group">
+            <main id="colors"> 
+                <main class="btns">
+                    <button class="black"></button>
+                    <button class="eraser"></button>
+                    <button class="random"></button>
+                </main>
+                <main class="rgb">
+                    <h3>R<input type="range" min="0" max="255" value="0" id="red"></h3>
+                    <h3>G<input type="range" min="0" max="255" value="0" id="green"></h3>
+                    <h3>B<input type="range" min="0" max="255" value="0" id="blue"></h3>
+                    <h3>Current Color: <button class="rgbBOX"></button></h3>
+                </main> 
+            </main>
+
+            <main id="pixels"></main> 
+
+        </main>
+    </body>
+    
+</html>

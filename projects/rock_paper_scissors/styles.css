@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'tom hand';
+    src: url(img/font/tomhand.ttf);
+}
+
+body{
+    margin: 0;
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+h1{
+    font-family: 'tom hand';
+    text-align: center;
+    font-size: 50px;
+}
+
+h2{
+    font-family: 'tom hand';
+    text-align: center;
+    font-size: 45px;
+}
+
+.UI{
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+
+#choiceUI{
+    display: flex;
+    flex-direction: column;
+}
+
+.weaponText{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'tom hand';
+    margin-left: 15em;
+    margin-bottom: 25px;
+}
+
+.userChoice{
+    display: flex;
+    gap: 56px;
+}
+
+.container{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'tom hand';
+    font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    opacity: 0;
+    color: white;
+    transition: .5s ease;
+    backdrop-filter: blur(3px);
+}
+
+.overlay:hover{
+    opacity: 1;
+    transition: .5s ease;
+    
+}
+
+.overlay > *{
+    transform: translateY(20px);
+    transition: .5s ease;
+}
+
+.overlay:hover > *{
+    transform: translateY(0px);
+}
+
+.rock{
+    background: url(img/rock.png);
+    background-size: cover;
+}
+
+.paper{
+    background: url(img/paper.png);
+    background-size: cover;
+}
+
+.scissors{
+    background: url(img/scissors.png);
+    background-size: cover;
+}
+.generated{
+    background-color: rgba(239,230,223);
+    background-size: cover
+}
+.rock, .paper, .scissors, .generated{
+    width: 19em;
+    height: 19em;
+    border-radius: 10px;
+}
+
+#outcome{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: black;
+    font-family: 'tom hand';
+    font-size: 30px;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.centerbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.retry{
+    font-family: 'tom hand';
+    font-size: larger;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+

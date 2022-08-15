@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Robo";
+    src: url(img/font/Robtronika-4Bq8p.ttf);
+}
+
+
+body{
+    background-color: #2F353D;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    font-family: "Robo";
+    color: #FAFBFC;
+}
+
+#calculator{
+    background-color: #A9A5B1;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 5px black;
+}
+
+#display{
+    font-family: "Robo";
+    text-align: end;
+    margin-bottom: 10px;
+    background-color: #858091;
+    padding: 1em;
+    height: 3.5em;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 3px black;
+}
+
+button{
+    font-family: "Robo";
+    color: white;
+    width: 7em;
+    height: 4em;
+    margin: .5em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px black;
+}
+
+button:hover{
+    transform:translateY(-1px); 
+    box-shadow: 0px 5px 5px black;
+}
+
+button:active{
+    filter: brightness(80%);
+    transform:translateY(2px);
+    box-shadow: 0px 2px 2px black;
+}
+
+.numBtn{
+    background-color: #CE494C;
+}
+
+.sideBtn, .decimal{
+    background-color: #E26F4C;
+}
+
+.botBtn{
+    background-color: #2F353D;
+}
+
+#bot{
+    text-align: center;   
+}
+
+.botBtn{
+    width: 10em;
+}
+
+.toBig{
+    font-family: "Robo";
+    color: white;
+    margin-top: 5px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="index.js" defer></script>
+
+<body class="">
+
+    <div>
+        <img class="coverIMG" src="img/cover.png" alt="Goodnight Punpun">
+        <div class="title">
+            <img src="img/icon.png" onclick="toggle()" width="100px">
+            <div class="img_text"> Build a Better Future</div>
+        </div>
+        <div class="cite"> Photo by <a href="https://twitter.com/wallpaperaccess">@WallpaperAccess</a></div>
+    </div>
+    
+    <div class="info">
+
+        <section class="one">
+            <blockquote>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</blockquote>
+            <blockquote>You <em>know</em> what to do.</blockquote>
+        </section>
+
+        <form action="#">
+            <section class="two">
+                <div class="header_S2">Let's do this!</div>
+            
+                <div>
+            
+                    <div>
+                        <label for="first">First Name</label>
+                        <input type="text" name="name" id="first" required>
+                    </div>
+                    <div>
+                        <label for="last">Last Name</label>
+                        <input type="text" name="name" id="last" required>
+                    </div>
+                </div>
+                <div>
+            
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone-number" id="phone-number" minlength="10" maxlength="10" required>
+                    </div>
+                </div>
+                <div>
+            
+                    <div>
+                        <label for="first">Password</label>
+                        <input class="password" type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="last">Confirm Password</label>
+                        <input class="confirm" type="password" name="password_confirm" id="password_confirm" required>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="three">
+                <button type="submit" class="create_account">Create Account</button>
+                <div class="log_in">Already have an account? <a href="#">Log In</a></div>
+            </section>
+            </form>
+        </body>
+</html>
