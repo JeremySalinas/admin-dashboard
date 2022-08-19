@@ -65,6 +65,7 @@ body{
     background-color: var(--twoBackgroundColor);
     box-shadow: var(--shadow);
     padding: 3em;
+    max-width: 100%;
 }
 
 .header_S2{
